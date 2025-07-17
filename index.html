@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joshna Ramkumar | QA Automation Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.setAttribute('data-theme', html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      document.getElementById('themeToggle').innerText = html.getAttribute('data-theme') === 'dark' ? '🌞 Light Mode' : '🌙 Dark Mode';
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300 font-sans">
+
+  <header class="text-center py-10 bg-indigo-700 dark:bg-indigo-800 text-white shadow-md">
+    <h1 class="text-3xl font-bold">QA Automation Portfolio</h1>
+    <p class="mt-2 text-lg">Joshna Ramkumar · QA | Selenium | API | Jenkins</p>
+    <button id="themeToggle" onclick="toggleTheme()" class="mt-4 px-4 py-2 bg-white text-indigo-700 dark:bg-gray-200 rounded-md shadow hover:bg-gray-100">
+      🌙 Dark Mode
+    </button>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-10 space-y-10">
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2 border-b border-indigo-500 pb-1">About Me</h2>
+      <p class="text-lg leading-relaxed">
+        I'm a QA specialist with 12+ years of experience in testing web and mobile applications. Currently diving deeper into Selenium with Python, API testing, and CI/CD pipelines using Jenkins & GitHub Actions.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 border-b border-indigo-500 pb-1">Projects</h2>
+
+      <div class="space-y-6">
+
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-bold">🧪 Selenium + Python Automation</h3>
+          <p>End-to-end test automation for a sample web application using the POM design pattern. Includes Jenkins CI pipeline.</p>
+          <a href="./projects/project1-selenium-python/" class="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">View Project →</a>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-bold">🌐 API Testing with Postman</h3>
+          <p>Comprehensive REST API tests using Postman and Newman CLI. Includes JSON assertions, collections, and reports.</p>
+          <a href="./projects/project2-api-tests/" class="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">View Project →</a>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-bold">⚙️ Jenkins CI/CD Demo</h3>
+          <p>Automated test execution triggered by code commits. Example Jenkinsfile included with parallel stage setup.</p>
+          <a href="./projects/project1-selenium-python/Jenkinsfile" class="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">View Jenkinsfile →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2 border-b border-indigo-500 pb-1">Contact</h2>
+      <div class="text-lg">
+        📧 <a href="mailto:joshna.dcosta@gmail.com" class="text-indigo-600 dark:text-indigo-400 hover:underline">joshna.dcosta@gmail.com</a><br/>
+        🔗 
+        <a href="https://github.com/JoshnaRk-Git/QualityWithJoshna" target="_blank" class="mr-4 text-indigo-600 dark:text-indigo-400 hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/joshna-ram-kumar-92166a15a/" target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400">
+    &copy; 2025 Joshna Ramkumar · All rights reserved.
+  </footer>
+
+</body>
+</html>
